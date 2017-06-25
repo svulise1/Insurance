@@ -15,6 +15,7 @@ namespace Insurance.MappingProfiles
         {
             CreateMap<Company, CompanyResource>();
             CreateMap<InsType, InsTypeResource>();
+            CreateMap<Feature, FeatureResource>();
         }
     }
 }
