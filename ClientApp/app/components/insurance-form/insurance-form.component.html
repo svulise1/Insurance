@@ -1,0 +1,17 @@
+<h1>Insurance</h1>
+<form>
+    <div class="form-group">
+        <label for="Company">Company</label>
+        <select class="form-control" name="companyId" [(ngModel)]="insurance.companyId">
+            <option value=""></option>
+            <option *ngFor="let c of company" id="{{c.id}}">{{c.name}}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="InsType">Insurance Type</label>
+        <select class="form-control">
+            <option value=""></option>
+        </select>
+    </div>
+</form>

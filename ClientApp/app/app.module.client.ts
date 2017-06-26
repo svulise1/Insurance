@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { sharedConfig } from './app.module.shared';
-
+import { sharedConfig } from './app.module';
+import { InsuranceFormComponent } from './components/insurance-form/insurance-form.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
     bootstrap: sharedConfig.bootstrap,
-    declarations: sharedConfig.declarations,
+    declarations: [
+        ...sharedConfig.declarations,
+        InsuranceFormComponent 
+        
+        ],
     imports: [
         BrowserModule,
         FormsModule,
